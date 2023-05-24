@@ -1,0 +1,307 @@
+@media (max-width: 370px) {
+    :root {
+        /* colors */
+
+        /* HSL color mode */
+
+        /*-- Primary --*/
+        --Cyan: hsl(180, 66%, 49%);
+        --Dark-Violet: hsl(257, 27%, 26%);
+
+        /*-- Secondary --*/
+        -Red: hsl(0, 87%, 67%);
+
+        /*-- Neutral --*/
+        --Gray: hsl(0, 0%, 75%);
+        --Grayish-Violet: hsl(257, 7%, 63%);
+        --Very-Dark-Blue: hsl(255, 11%, 22%);
+        --Very-Dark-Violet: hsl(260, 8%, 14%);
+    }
+
+    /* Cabeçalho */
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .container-header img {
+        display: inline-block;
+        position: relative;
+    }
+
+    .btn-menu {
+        display: flex;
+        justify-content: space-around;
+   }
+
+    .botao-menu1 {
+        cursor: pointer;
+        border-radius: 30px;
+        background: none;
+        padding: 10px;
+        font: 700 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        color: var(--Grayish-Violet);
+        border: none;
+        height: 2rem;
+        width: 4rem;
+    }
+
+    .botao-menu2 {
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: var(--Cyan);
+        font: 700 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        border: none;
+        height: 3rem;
+        width: 7rem;
+        margin: 3px;
+    }
+
+    #menu ul {
+        padding: 0;
+        margin: 20px;
+
+        list-style: none;
+        text-align: center;
+    }
+
+    #menu li a {
+        font: 700 1rem 'poppins', sans-serif;
+        color: var(--Grayish-Violet);
+    }
+
+    #burguer {
+        position: absolute;
+        margin-top: -30px;
+        right: 50px;
+    }
+
+    i#burguer {
+        color: var(--Gray);
+        cursor: pointer;
+    }
+
+    i#burguer :hover {
+        background-color: aqua;
+        color: var(--Very-Dark-Blue);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* Corpo da pagina */    
+
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column-reverse;
+
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .img-form img {
+        border-radius: 20px;
+        position: relative;
+        width: 100%;
+        background: #1c0330;
+    }
+
+    .form input button {
+        position: absolute;
+        z-index: 1;
+    }
+
+    input {
+        border-radius: 10px;
+        background-color: #fff;
+        font: 500 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        text-align: center;
+
+        border: none;
+        height: 3.5rem;
+        width: 85%;
+        margin: 7px;
+        margin-top: 20px;
+    }
+
+    .btn-input {  
+        cursor: pointer;
+        border-radius: 10px;
+        background-color: var(--Cyan);
+        font: 700 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        border: none;
+        height: 3.5rem;
+        width: 85%;
+        margin: 7px;
+        margin-top: 20px;
+    }
+
+
+
+
+    .container-pesquisa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .h1-principal {
+        color: var(--Very-Dark-Blue);
+        font: 700 2.5rem 'Poppins', sans-serif;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    p {
+        color: var(--Grayish-Violet);
+        font-size: 18px;
+        font: 500 1rem 'Poppins', sans-serif;
+        text-align: center;        
+    }
+
+    .btn-principal {
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: var(--Cyan);
+        font: 700 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        border: none;
+        height: 3.5rem;
+        width: 10rem;
+        margin: 5px;
+    }
+
+    .img-trabalho {
+        margin: auto;
+        width: 100%;
+    }
+
+
+    .conteudo-secundario {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        margin-bottom: 30px;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        position: relative;
+
+
+        padding: 4rem 1rem 4rem 1rem;
+        box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.08);
+        border-radius: 0.25rem 0.25rem 0 0;
+        text-align: center;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -40px;
+        right: calc(50% - 45px);
+
+        background: #1c0330;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+
+    /* Final da pagina */
+
+    .boost-h2 {
+        color: #fff;
+
+        position: absolute;
+        z-index: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .boost-mobile img {
+        position: relative;
+        width: 100%;
+        background: #1c0330;
+    }
+
+    .btn-boost {
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: var(--Cyan);
+        font: 700 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        border: none;
+        height: 3.5rem;
+        width: 10rem;
+        margin: 5px;
+    }
+
+    /* Final da pagina */
+
+    .main-footer {
+        background-color: #1c1224;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .img-footer img {
+        margin: 20px;
+
+        color: #fff;
+    }
+
+    .main-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+        width: 100%;
+    }
+    
+
+    .main-footer h3 {
+        color: #fff;
+    }
+
+    .main-footer li {
+        color: var(--Very-Dark-Blue);
+        font: 500 1rem 'Poppins', sans-serif;
+    }
+
+    .main-footer li {
+        list-style: none;
+        margin: 20px;
+    }
+
+    .icon-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}

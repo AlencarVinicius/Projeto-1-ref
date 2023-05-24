@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+@media (min-width: 371px){
+    
+body {
+    padding: 10px 20px;
 }
 
 :root {
@@ -27,3 +33,4 @@
 }
 
 /* Cabeçalho */
+}
