@@ -34,7 +34,7 @@
     .btn-menu {
         display: flex;
         justify-content: space-around;
-   }
+    }
 
     .botao-menu1 {
         cursor: pointer;
@@ -95,7 +95,7 @@
         display: none;
     }
 
-    /* Corpo da pagina */    
+    /* Corpo da pagina */
 
 
     .conteudo-principal {
@@ -132,7 +132,7 @@
         margin-top: 20px;
     }
 
-    .btn-input {  
+    .btn-input {
         cursor: pointer;
         border-radius: 10px;
         background-color: var(--Cyan);
@@ -153,12 +153,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+
         margin-top: 40px;
         margin-bottom: 80px;
     }
 
-    .h1-principal {
+    .h2-principal {
         color: var(--Very-Dark-Blue);
         font: 700 2.5rem 'Poppins', sans-serif;
         text-align: center;
@@ -169,7 +169,7 @@
         color: var(--Grayish-Violet);
         font-size: 18px;
         font: 500 1rem 'Poppins', sans-serif;
-        text-align: center;        
+        text-align: center;
     }
 
     .btn-principal {
@@ -245,6 +245,7 @@
         position: relative;
         width: 100%;
         background: #1c0330;
+        margin-bottom: 0;
     }
 
     .btn-boost {
@@ -266,7 +267,6 @@
         background-color: #1c1224;
         padding-top: 20px;
         padding-bottom: 20px;
-
     }
 
     .img-footer img {
@@ -279,10 +279,10 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        
+
         width: 100%;
     }
-    
+
 
     .main-footer h3 {
         color: #fff;
