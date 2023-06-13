@@ -24,14 +24,14 @@
             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
             <nav id="menu">
               <ul>
-                <li><a href="">Características</a></li>
-                <li><a href="">Preços</a></li>
-                <li><a href="">Recursos</a></li>
+                <li><a id="hover1"  href="">Características</a></li>
+                <li><a id="hover1" href="">Preços</a></li>
+                <li><a id="hover1" href="">Recursos</a></li>
               </ul>
               
               <div class="btn-nav">
-                <button class="botao-menu1">Login</button>
-                <button class="botao-menu2">Sign Up</button>
+                <button id="hover1" class="botao-menu1">Login</button>
+                <button id="btn" class="botao-menu2">Sign Up</button>
               </div>
             </nav>
         </div>
@@ -45,7 +45,7 @@
               Build your brand's recognition and get detailed insights on how your
               links are performing.
             </p>
-            <button class="btn-principal">Get Started</button>
+            <button id="btn" class="btn-principal">Get Started</button>
           </div>
 
           <img
@@ -55,23 +55,13 @@
         </section>
 
         <section class="form">
-          <div class="container-form">
             <input
               type="text"
               class="search-txt"
               placeholder="Shorten a link here..."
             />
 
-            <button class="btn-input">Shorten It!</button>
-          </div>
-
-          <div class="img-form">
-            <img src="url-shortening-api-master/images/bg-shorten-mobile.svg" />
-          </div>
-
-          <div class="img-form-desktop">
-            <img src="url-shortening-api-master/images/bg-shorten-desktop.svg" />
-          </div>
+            <button id="btn" class="btn-input">Shorten It!</button>
         </section>
 
         <section>
@@ -84,7 +74,9 @@
           </div>
         </section>
 
+
         <section class="conteudo-secundario">
+          <hr>
           <div class="card1">
             <div class="icon">
               <img
@@ -126,62 +118,57 @@
           </div>
         </section>
     </section>
-
-      <section>
-        <div class="boost-h2">
-          <h2>Boost your links today</h2>
-          <button class="btn-boost">Get Started</button>
-        </div>
-        <div class="boost-mobile">
-          <img src="url-shortening-api-master/images/bg-boost-mobile.svg" />
-        </div>
-      </section>
     </main>
+
+    <section class="container-footer">
+      <div class="boost-h2">
+        <h2 class="boost-txt">Boost your links today</h2>
+        <button id="btn" class="btn-boost">Get Started</button>
+      </div>
+    </section>
 
     <footer class="main-footer">
       <div class="img-footer">
-        <img src="url-shortening-api-master/images/logo.svg"/>
+        <img src="url-shortening-api-master/images/logo-footer.svg"/>
       </div>
       
-      <div>
-      <section>
-      <h3>Features</h3>
-      <ul>
-        <li>Link Shortening</li>
-        <li>Branded Links</li>
-        <li>Analytics</li>
-      </ul>
-      </section>
-      
-      <section>
-        <h3>Resources</h3>
+        <div class="features">
+        <h3>Features</h3>
         <ul>
-          <li>Blog</li>
-          <li>Developers</li>
-          <li>Support</li>
+          <li>Link Shortening</li>
+          <li>Branded Links</li>
+          <li>Analytics</li>
         </ul>
-      </section>
+      </div>
+        
+        <div class="Resources">
+          <h3>Resources</h3>
+          <ul>
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </div>
 
-      <section>
-        <h3>Company</h3>
-        <ul>
-          <li>About</li>
-          <li>Our Team</li>
-          <li>Careers</li>
-          <li>Contact</li>
-        </ul>
-      </section>
+        <div class="Company">
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
 
       <section>
         <div class="icon-footer">
-          <img src="url-shortening-api-master/images/icon-facebook.svg" alt="facebook">
-          <img src="url-shortening-api-master/images/icon-twitter.svg" alt="twitter">
-          <img src="url-shortening-api-master/images/icon-pinterest.svg" alt="pinterest">
-          <img src="url-shortening-api-master/images/icon-instagram.svg" alt="instagram">
+          <img class="icon-h" src="url-shortening-api-master/images/icon-facebook.svg" alt="facebook">
+          <img class="icon-h" src="url-shortening-api-master/images/icon-twitter.svg" alt="twitter">
+          <img class="icon-h" src="url-shortening-api-master/images/icon-pinterest.svg" alt="pinterest">
+          <img class="icon-h" src="url-shortening-api-master/images/icon-instagram.svg" alt="instagram">
         </div>
       </section>
 
-      </div>
     </footer>
 
     <script src="main.js"></script>

@@ -6,12 +6,14 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'poppins', sans-serif;
-    
+
 }
 
 p {
     color: var(--Grayish-Violet);
 }
+
+@media (min-width: 851px) {
 
     :root {
         /* colors */
@@ -26,6 +28,7 @@ p {
         -Red: hsl(0, 87%, 67%);
 
         /*-- Neutral --*/
+        --Cyan-btn: hsl(182, 54%, 75%);
         --Gray: hsl(0, 0%, 75%);
         --Grayish-Violet: hsl(257, 7%, 63%);
         --Very-Dark-Blue: hsl(255, 11%, 22%);
@@ -61,7 +64,7 @@ p {
 
         width: 100%;
     }
-    
+
     #menu ul {
         padding: 0;
         margin: 20px;
@@ -76,6 +79,14 @@ p {
     #menu li a {
         font: 700 1rem 'poppins', sans-serif;
         color: var(--Grayish-Violet);
+    }
+
+    #btn:hover {
+        background: var(--Cyan-btn);
+    }
+
+    #hover1:hover {
+        color: var(--Dark-Violet);
     }
 
     .btn-nav {
@@ -114,13 +125,13 @@ p {
     }
 
     .conteudo-principal {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
         margin: 80px 0;
     }
 
-    .conteudo-principal div{
+    .conteudo-principal div {
         text-align: left;
         margin: 50px;
     }
@@ -128,6 +139,10 @@ p {
     .h2-principal {
         font-size: 3rem;
         color: var(--Very-Dark-Blue);
+    }
+
+    .img-trabalho {
+        width: 100%;
     }
 
     .btn-principal {
@@ -148,14 +163,15 @@ p {
     /* Section form */
 
     .form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+        background-image: url("url-shortening-api-master/images/bg-shorten-desktop.svg");
+        background-color: #3a3053;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 40px 0;
 
-    .container-form {
-        position: absolute;
-        width: 1000px;
+        margin: 50px 50px 0;
+        border-radius: 8px;
+
         text-align: center;
     }
 
@@ -175,9 +191,9 @@ p {
         color: #fff;
         border: none;
         border-radius: 4px;
+        transition: 0.4s;
     }
 
-    
     .img-form {
         display: none;
     }
@@ -186,11 +202,36 @@ p {
         background-color: #1c1224;
         text-align: center;
         border-radius: 20px;
+
+        width: 100%;
     }
 
- 
+    .container-pesquisa {
+        margin: 70px;
+        padding: 20px;
+    }
+
+    .container-pesquisa h1 {
+        font-size: 3rem;
+        color: var(--Very-Dark-Blue);
+    }
+
+    .container-pesquisa p {
+        font-size: 2rem;
+
+        width: 50%;
+    }
+
+
     /* Corpo da pagina */
 
+    .card2 {
+        margin-top: 90px;
+    }
+
+    .card3 {
+        margin-top: 180px;
+    }
 
 
     .card1,
@@ -206,6 +247,7 @@ p {
         box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
         border-radius: 0.25rem 0.25rem 0 0;
         text-align: left;
+        background-color: #fff;
     }
 
     .icon {
@@ -222,11 +264,22 @@ p {
         border-radius: 50%;
     }
 
+    hr {
+        width: 100%;
+        height: 10px;
+        border: none;
+        background-color: var(--Cyan);
+
+        position: absolute;
+    }
+
     .conteudo-secundario {
         display: flex;
         align-items: center;
-        padding-top: 4rem;
         gap: 30px;
+        margin: 0 50px;
+
+        position: relative;
     }
 
     .container-pesquisa {
@@ -243,6 +296,56 @@ p {
         font: 500 'Poppins', sans-serif;
     }
 
+    .container-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url("url-shortening-api-master/images/bg-boost-desktop.svg");
+        background-color: #3a3053;
+        background-size: cover;
+        width: 100%;
+        height: 330px;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+    }
+
+    .boost-h2 {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .btn-boost {
+        cursor: pointer;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: var(--Cyan);
+        font: 700 1rem 'Poppins', sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        border: none;
+        height: 3rem;
+        width: 10rem;
+        margin-top: 2rem;
+        transition: 0.4s;
+    }
+
+    .btn-boost:hover {
+        background: var(--Gray);
+    }
+
+    .boost-desktop {
+        background-image: url("url-shortening-api-master/images/bg-boost-desktop.svg");
+        background-color: #3a3053;
+        background-size: cover;
+        width: 100%;
+        height: 330px;
+        background-repeat: no-repeat;
+        margin-top: 50px;
+    }
+
     .boost-mobile img {
         display: none;
     }
@@ -252,43 +355,63 @@ p {
     /* Final da pagina */
 
     .main-footer {
-        background-color: #1c1224;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .img-footer img {
-        margin: 20px;
-
+        background-color: #232027;
+        padding: 50px 0;
+        height: 300px;
         color: #fff;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 10px;
     }
 
-    .main-footer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
-        width: 100%;
+    .img-footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
     }
 
-
-    .main-footer h3 {
-        color: #fff;
+    .features h3 {
+        margin: 0 0 20px;
     }
 
-    .main-footer li {
-        color: var(--Very-Dark-Blue);
-        font: 500 1rem 'Poppins', sans-serif;
+    .Resources h3 {
+        margin: 0 0 20px;
     }
 
-    .main-footer li {
-        list-style: none;
-        margin: 20px;
+    .Company h3 {
+        margin: 0 0 20px;
     }
 
-    .icon-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
+    .features li {
+        margin: 0 0 7px;
+        list-style-type: none;
+        cursor: pointer;
     }
+
+    .Resources li {
+        margin: 0 0 7px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .Company li {
+        margin: 0 0 7px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: var(--Cyan);
+    }
+
+    .icon-footer img {
+        margin: 0 8px;
+    }
+    .icon-h {
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+}
