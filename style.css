@@ -264,7 +264,7 @@ p {
         border-radius: 50%;
     }
 
-    hr {
+    .hr-secundario {
         width: 100%;
         height: 10px;
         border: none;
@@ -273,11 +273,15 @@ p {
         position: absolute;
     }
 
+    .hr-menu {
+        display: none;
+    }
+
     .conteudo-secundario {
         display: flex;
         align-items: center;
         gap: 30px;
-        margin: 0 50px;
+        margin: 0 20px;
 
         position: relative;
     }
@@ -341,7 +345,7 @@ p {
         background-color: #3a3053;
         background-size: cover;
         width: 100%;
-        height: 330px;
+        height: 200px;
         background-repeat: no-repeat;
         margin-top: 50px;
     }
