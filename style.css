@@ -207,7 +207,7 @@ p {
     }
 
     .container-pesquisa {
-        margin: 70px;
+        margin: 50px;
         padding: 20px;
     }
 
@@ -281,7 +281,7 @@ p {
         display: flex;
         align-items: center;
         gap: 30px;
-        margin: 0 20px;
+        margin: 0 10px;
 
         position: relative;
     }
